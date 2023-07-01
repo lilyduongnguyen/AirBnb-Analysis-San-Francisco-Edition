@@ -2,37 +2,72 @@
 
 ![Airbnb Logo](https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg)
 
-This README provides a guide for new hosts looking to invest in Airbnb units in San Francisco. It includes insights from the dataset and offers recommendations on location, amenities, becoming a Superhost, and improving guest experience based on reviews.
+Certainly! Here's the adjusted README with the photo link and without the Usage section:
 
-## About Airbnb
+# San Francisco Airbnb Analysis
 
-AirBnb, founded in 2008, is a global platform that connects hosts and guests for unique travel experiences. As of September 2021, the website boasts over 4 million hosts and operates in more than 220 countries and regions. In 2019, hosts in the United States alone earned over $10 billion. Airbnb also offers a Host Guarantee program, providing up to $1 million in property damage protection for eligible bookings.
+This project analyzes Airbnb data in San Francisco, focusing on different neighborhoods, room types, superhosts, and reviews. It includes visualizations such as maps, scatter plots, and word clouds to explore various aspects of the data.
 
-## Project Summary
+## Table of Contents
 
-My analysis leverages the datasets with information about Airbnb listings in San Francisco. Here are a few key findings from my exploratory data analysis (EDA):
+- [Installation](#installation)
+- [Data](#data)
+- [Analysis](#analysis)
+- [Results](#results)
+- [Acknowledgments](#acknowledgments)
 
-- Location: Guests prioritize safe neighborhoods near popular tourist attractions and public transportation.
-- Average rating and price by location: Central to western regions tend to have better overall ratings and reasonable price ranges for guests.
-- Demand and availability: Neighborhoods like Presidio, Seacliff, Outer Richmond, Outer Sunset, and Diamond Heights are desirable, but availability should be considered. Seacliff, Outer Richmond, and Outer Sunset have lower availability, making them better options.
-- Amenities: Guests value amenities such as WiFi, TV, hangers, hair dryer, and fully equipped kitchens in entire home/apartment listings. Shared rooms have similar amenities, while private rooms often exclude kitchens. Hotel guests prioritize elevators and gyms.
-- Superhosts enjoy more visibility, receive a $100 coupon annually, and can earn up to 20% on top of the usual referral bonus.
+## Installation
 
-To provide exceptional guest experiences and improve your listing:
+To run this analysis, you need to have the following libraries installed:
 
-- Maintain high overall ratings across accuracy, check-ins, cleanliness, communication, location, and value.
-- Strive for a response rate exceeding 90% and keep cancellations minimal.
-- Analyze guest reviews to understand what aspects guests appreciate and areas that need improvement.
-- Focus on cleanliness, comfort, welcoming behavior, and meeting guests' expectations.
-- Understand the pros and cons of different listings and prioritize the strengths while addressing any shortcomings.
+- geopandas
+- nltk
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- wordcloud
+- folium
 
-## Datasets Source
-The datasets used in this project were obtained from [Inside Airbnb](http://insideairbnb.com/get-the-data/). Inside Airbnb provides publicly available data related to Airbnb listings in various cities worldwide.
+You can install the required libraries using the following command:
 
-I have used two datasets "listings.csv.gz" and "reviews.csv.gz" from this website for the San Francisco area.
+```
+pip install geopandas nltk pandas numpy seaborn matplotlib wordcloud folium
+```
 
-Please note that the dataset files are compressed in the gzip format (.gz), and you may need to extract them before using them in your analysis.
+## Data
 
-## Contributing
+This analysis uses two dataset files:
 
-Contributions and suggestions to improve this guide are welcome! Please feel free to open an issue or submit a pull request with any valuable insights or tips you would like to share.
+- `listings.csv.gz`: Contains information about Airbnb listings in San Francisco, including property type, price, availability, review scores, and more.
+- `reviews.csv.gz`: Contains reviews for the listings, including comments and ratings.
+
+Please ensure that these files are placed in the project directory before running the code.
+
+## Analysis
+
+The analysis consists of the following steps:
+
+1. Importing necessary libraries and dataset files.
+2. Observing the dataset by printing information about the listings dataframe.
+3. Analyzing different neighborhoods in San Francisco based on average rating, price, availability, and demand.
+4. Exploring amenities across different room types and creating visualizations.
+5. Analyzing superhosts and their ratings.
+6. Creating word clouds to visualize high and low rating reviews.
+7. Creating interactive maps using Folium to visualize the data geographically.
+
+## Results
+
+The analysis provides insights into the following aspects:
+
+- Average rating, price, availability, and demand across different neighborhoods in San Francisco.
+- Distribution of amenities among different room types.
+- Relationship between superhost status, review ratings, and host response rates.
+- Word clouds showing important words in high and low rating reviews.
+- Interactive maps displaying the spatial distribution of ratings, prices, and other variables across San Francisco neighborhoods.
+
+The generated visualizations help in understanding the Airbnb landscape in San Francisco and provide valuable insights for hosts and travelers.
+
+## Acknowledgments
+
+The analysis was performed using the San Francisco Airbnb dataset obtained from [Inside Airbnb](http://insideairbnb.com/get-the-data.html). Special thanks to the developers and contributors of the libraries used in this analysis, including pandas, numpy, seaborn, matplotlib, wordcloud, geopandas, nltk, and folium.
