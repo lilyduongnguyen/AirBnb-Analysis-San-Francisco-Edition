@@ -2,11 +2,10 @@
 
 ![Airbnb Logo](https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg)
 
-Certainly! Here's the adjusted README with the photo link and without the Usage section:
+This README provides a guide for new hosts looking to invest in Airbnb units in San Francisco. It includes insights from the dataset and offers recommendations on location, amenities, becoming a Superhost, and improving guest experience based on reviews.
 
-# San Francisco Airbnb Analysis
-
-This project analyzes Airbnb data in San Francisco, focusing on different neighborhoods, room types, superhosts, and reviews. It includes visualizations such as maps, scatter plots, and word clouds to explore various aspects of the data.
+## About Airbnb
+AirBnb, founded in 2008, is a global platform that connects hosts and guests for unique travel experiences. As of September 2021, the website boasts over 4 million hosts and operates in more than 220 countries and regions. In 2019, hosts in the United States alone earned over $10 billion. Airbnb also offers a Host Guarantee program, providing up to $1 million in property damage protection for eligible bookings.
 
 ## Table of Contents
 
